@@ -1,0 +1,53 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            background: #333;
+            overflow: hidden;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            padding: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            width: 200px;
+        }
+        .card img {
+            width: 100%;  /* Makes the image fill the card width */
+            height: 150px;  /* Sets a fixed height for uniformity */
+            object-fit: fixed;  /* Ensures the image maintains aspect ratio without stretching */
+            border-radius: 8px;
+        }
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+            background: #e0f7fa;
+        }
+        .services img {
+            width: 150px;
+            border-radius: 8px;
+        }

@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #434343;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li.active a {
+    background-color: #c0c0c0;
+    color: #fff;
+}
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.add-patient {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#search {
+    padding: 8px;
+    width: 250px;
+    border-radius: 5px;
+    margin-left: 280px;
+    border: 1px solid #ccc;
+}
+
+button#search-btn {
+    background: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+table {
+    width: 80%;
+    margin-left: 280px;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+th {
+    background: #3e236e;
+    text-align: center;
+    color: white;
+}
+
+td {
+    border-radius: 5px;
+    background: #a7a1e7;
+    text-align: center;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    margin: 2px;
+}
+
+.pagination a.active {
+    font-weight: bold;
+    background: #007bff;
+    color: white;
+}
+

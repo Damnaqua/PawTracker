@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    font-family: 'Lucida Console';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 100%;
+    height: 70%;
+    max-width: 400px;
+    background: white;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.slideshow-container .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.slideshow-container .slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Lucida Console';
+    gap: 10px;
+    padding: 50px;
+}
+
+.buttons button {
+    background-color: #5b4592;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #2980b9;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    color: #666;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.bottom-nav a.active {
+    color: #3498db;
+    background: rgba(52, 152, 219, 0.2);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.notification-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.notification-icon {
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Lucida Console';
+}
+
+.notification-icon .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.notification-panel {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 300px;
+    border-radius: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 10px;
+    z-index: 1000;
+}
+
+.notification-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+.products-section {
+    padding: 20px;
+    background: #f9f9f9;
+    border-top: 2px solid #ddd;
+    text-align: center;
+}
+
+.products-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.product-card {
+    display: flex;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    text-align: left;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-info h3 {
+    margin: 0 0 8px 0;
+    color: #2c3e50;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}

@@ -1,0 +1,196 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 15px 20px;
+    color: rgb(39, 96, 171);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;  /* Align logo and text */
+    gap: 10px;  /* Space between logo and text */
+}
+
+.logo {
+    width: 50px;  /* Adjust size as needed */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+.logo-text {
+    font-size: 20px;  /* Adjust text size */
+    font-weight: bold;
+    color: #274889;  /* Customize color */
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    color:  rgb(39, 96, 171);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    font-size: 26px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Hero Section */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: #2579d2;
+    color: white;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+.btn {
+    background: rgb(255, 255, 255);
+    color: #1543c3;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #86b9ec, #f777ec); /* Darker shade on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    color: #f2f2f2;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services h2 {
+    font-size: 30px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+}
+
+.service-box img {
+    width: 60px;
+}
+
+.service-box h3 {
+    margin: 10px 0;
+}
+
+/* Testimonials */
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f2f2f2;
+}
+
+.testimonial {
+    background: white;
+    padding: 20px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #3a3a3a;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #3a3a3a;
+        padding: 10px 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        width: 95%;
+    }
+}

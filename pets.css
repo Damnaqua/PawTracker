@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    flex-direction: column;
+}
+
+/* Pet Profile */
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+}
+
+.pet-profile select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.pet-image {
+    width: 100px;
+    height: 100px;
+    background: #ddd;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+.pet-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Health Record */
+.health-record {
+    margin-top: 20px;
+}
+
+.health-record h3 {
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.record-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.vaccination { background: #f8d7da; }
+.deworm { background: #d6d6d6; }
+.checkup { background: #fff3cd; }
+.vet-visit { background: #cfe2ff; }
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    color: #666;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.bottom-nav a.active {
+    color: #3498db;
+    background: rgba(52, 152, 219, 0.2);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+.bottom-navbar a i {
+    font-size: 22px;
+    margin-bottom: 2px;
+}
+
+.bottom-navbar a.active {
+    color: #007bff;
+}
+
+@media screen and (max-width: 480px) {
+    .bottom-navbar {
+        padding: 8px 0;
+    }
+
+    .bottom-navbar a i {
+        font-size: 20px;
+    }
+
+    .bottom-navbar a {
+        font-size: 14px;
+    }
+}

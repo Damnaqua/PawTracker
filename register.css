@@ -1,0 +1,90 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+}
+
+/* Layout */
+.register-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left Panel (Image) */
+.left-panel {
+    flex: 1;
+    background: #3c2054;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cats-img {
+    width: 80%;
+}
+
+/* Right Panel (Form) */
+.right-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.register-box {
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+.cat-icon {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button */
+button {
+    background: #7442ba;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #ff9800;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    margin-bottom: 10px;
+}

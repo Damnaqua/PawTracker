@@ -1,0 +1,103 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #434343;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li.active a {
+    background-color: #c0c0c0;
+    color: #fff;
+}
+
+/* Calendar Container */
+.calendar-container {
+    margin-left: 270px;
+    padding: 20px;
+    margin-left: 280px;
+}
+
+.calendar-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Calendar Table */
+.calendar {
+    table-layout: fixed;
+    width: 100%;
+}
+
+
+.calendar th, .calendar td {
+    width: 12.5%; /* Sama rata untuk 8 kolum (Time + 7 Hari) */
+    height: 60px; /* Tetapkan tinggi yang sama */
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap; /* Elak teks pecah ke baris baru */
+    overflow: hidden;
+    border: 1px solid #c7bdbd;
+    border-radius: 10px;
+    text-overflow: ellipsis;
+}
+
+.calendar th {
+    background: #a887e0;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Appointment styles */
+.appointment {
+    font-weight: bold;
+    border-radius: 10px;;
+    color: white;
+    font-size: 15px;
+}
+
+/* Appointment Colors */
+.green { background-color: #90be6d; } /* Deworming */
+.yellow { background-color: #4cc9f0; } /* Vaccination */
+.orange { background-color: #f9c74f; } /* General Checkup */
+.blue { background-color: #f8961e; } /* Consultation */
+.gray { background-color: #d135a5; } /* Default */
+

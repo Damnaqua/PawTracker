@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.chat-container {
+    flex: 1;
+    max-width: 400px;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+}
+
+.chat-header {
+    background: #314a66;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    max-height: 500px;
+    padding: 10px;
+}
+
+.chat-message {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.sent {
+    justify-content: flex-end;
+}
+
+.received {
+    justify-content: flex-start;
+}
+
+/* Chat input field */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background: white;
+}
+
+.chat-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.chat-input button {
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.chat-input button:hover {
+    background: #0056b3;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    color: #666;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.bottom-nav a.active {
+    color: #3498db;
+    background: rgba(52, 152, 219, 0.2);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+.bottom-navbar a i {
+    font-size: 22px;
+    margin-bottom: 2px;
+}
+
+.bottom-navbar a.active {
+    color: #007bff;
+}
+
+/* Adjust navbar size for better mobile view */
+@media (max-width: 480px) {
+    .chat-bubble {
+        max-width: 85%;
+        font-size: 13px;
+    }
+
+.bottom-navbar a i {
+    font-size: 20px;
+    }
+}
+
+.chat-bubble {
+    max-width: 75%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.sent .chat-bubble {
+    background-color: #4CAF50;
+    color: white;
+    border-top-right-radius: 0;
+}
+
+.sent .chat-bubble {
+    background: #25d366;
+    color: white;
+    border-top-right-radius: 0;
+}
+
+.received .chat-bubble {
+    background-color: #eae8e8;
+    color: black;
+    border-top-left-radius: 0;
+}
+
+.received .chat-avatar {
+        width: 30px;
+        height: 30px;
+    }
+
+.sent .chat-avatar {
+    display: none;
+}
+
+.chat-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    object-fit: cover;
+}
+
+.chat-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-timestamp {
+    font-size: 12px;
+    opacity: 0.6;
+    margin-top: 5px;
+}
+
+.chat-content strong {
+    font-size: 14px;
+    font-weight: bold;
+}

@@ -1,0 +1,8 @@
+Array
+(
+    [owner_id] => 6
+    [appointment_date] => 2025-03-09
+    [appointment_time] => 11:30
+    [appointment_type] => General Checkup
+    [pet_id] => 14
+)

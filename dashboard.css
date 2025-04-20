@@ -1,0 +1,286 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    margin-left: 300px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #434343;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li.active a {
+    background-color: #c0c0c0;
+    color: #fff;
+}
+
+/* Main Content */
+.main-content {
+    flex: 2;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.admin-info {
+    font-weight: bold;
+}
+
+.stat-box {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.dashboard-stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.financial-graph {
+    background: white;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 450px; /* Fixed height */
+    width: 95%; /* Ensures it doesn’t overflow */
+}
+
+.financial-graph-container {
+    width: 70%;
+    height: 300px; /* Fixed height */
+    overflow: hidden; /* Prevents scrolling */
+    margin: 0 auto; /* Centers the graph */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.financial-graph-container canvas {
+    width: 95% !important;
+    height: 100% !important;
+    display: block;
+}
+
+/* Calendar Styling */
+.calendar-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.calendar-dates {
+    display: flex;
+    justify-content: space-around;
+}
+
+.date-box {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 50px;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+}
+
+.selected-date {
+    background: #1a53ff;
+    color: white;
+}
+
+/* Appointment Styles */
+.appointment-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Colors for different types */
+.yellow-bg { background-color: #ffeb3b; } /* Vaccination */
+.blue-bg { background-color: #90caf9; }  /* Deworming */
+.green-bg { background-color: #c8e6c9; } /* Checkup */
+.orange-bg { background-color: #ffcc80; } /* Grooming */
+.default-bg { background-color: #a43636; }
+
+.appointments-container {
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+/* Right Panel */
+.right-panel {
+    width: 300px;
+    padding: 15px;
+}
+
+.appointments-container {
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+.date-picker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.date-picker button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+#selectedDate {
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.appointments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.appointment-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.appointment-card.yellow { background-color: #f9c74f !important; } /* General Checkup */
+.appointment-card.blue { background-color: #4cc9f0 !important; } /* Vaccination */
+.appointment-card.green { background-color: #90be6d !important; } /* Deworming */
+.appointment-card.orange { background-color: #f8961e !important; } /* Consultation */
+
+/* Today's Appointments & Staff Section */
+.appointments-section, .staff-section {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.staff-on-duty {
+    margin-top: 15px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.staff-name {
+    color: green;
+    font-weight: bold;
+    height: 390px;
+}
+
+.appointments-section h2, .staff-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.appointments-section ul, .staff-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.appointments-section ul li, .staff-section ul li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.appointments-section ul li:last-child, .staff-section ul li:last-child {
+    border-bottom: none;
+}
+
+.appointments-section ul li {
+    font-size: 14px;
+    color: #333;
+}
+
+.staff-section ul li {
+    font-size: 14px;
+    font-weight: bold;
+    color: green;
+}
